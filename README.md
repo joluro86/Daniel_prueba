@@ -1,59 +1,48 @@
-Daniel – Prueba técnica (Node + MySQL + React)
+# Daniel – Prueba Técnica (Node.js + MySQL + React)
 
-CRUD de Categorías y Productos con:
+CRUD completo de categorías y productos con una interfaz moderna y una API REST.  
+El proyecto fue desarrollado como parte de una prueba técnica full-stack, usando tecnologías actuales y código estructurado.
 
-Backend: Node.js, Express, MySQL (mysql2/promise), CORS, dotenv
+---
 
-Frontend: React + Vite, React Router, Axios
-
-UI: CSS moderno (cards, tablas, formularios, botones) sin librerías externas
-
-Descripción del proyecto
+## Descripción del Proyecto
 
 El sistema permite:
 
-Categorías: listar, crear, editar, eliminar.
+- Categorías: listar, crear, editar y eliminar.  
+- Productos: listar, crear, editar y eliminar, asociados a una categoría.  
+- API RESTful disponible en `/categories` y `/products`.  
+- Frontend tipo dashboard con navegación, formularios y tablas responsivas.  
+- Validaciones en formularios para garantizar la calidad de los datos.
 
-Productos: listar, crear, editar, eliminar, asociados a una categoría.
+---
 
-API REST en /categories y /products.
+## Tecnologías
 
-Frontend tipo dashboard con tablas, formularios y navegación.
+### Backend
+- Node.js  
+- Express  
+- MySQL (mysql2/promise)  
+- Dotenv  
+- CORS  
+- Nodemon
 
-Requisitos
+### Frontend
+- React + Vite  
+- React Router DOM  
+- Axios  
 
-Node.js LTS (18+ recomendado)
+### Interfaz
+- CSS moderno con diseño tipo dashboard (tarjetas, tablas, formularios, botones).  
+- Sin librerías externas: estilos propios diseñados manualmente.
 
-MySQL Server (8.x) y acceso local
+---
 
-npm (incluido con Node)
+## Requisitos Previos
 
-Daniel_prueba/
-├─ backend/
-│  ├─ src/
-│  │  ├─ controllers/
-│  │  │  ├─ category.controller.js
-│  │  │  └─ product.controller.js
-│  │  ├─ routes/
-│  │  │  ├─ category.routes.js
-│  │  │  └─ product.routes.js
-│  │  ├─ db/
-│  │  │  ├─ pool.js
-│  │  │  └─ test-connection.js
-│  │  └─ index.js
-│  ├─ .env
-│  └─ package.json
-└─ frontend/
-   ├─ src/
-   │  ├─ api/
-   │  │  ├─ client.js
-   │  │  ├─ categories.js
-   │  │  └─ products.js
-   │  ├─ components/Nav.jsx
-   │  ├─ pages/
-   │  │  ├─ CategoriesList.jsx
-   │  │  ├─ CategoryForm.jsx
-   │  │  ├─ ProductsList.jsx
-   │  │  └─ ProductForm.jsx
-   │  └─ main.jsx / index.css
-   └─ package.json
+- Node.js LTS (versión 18 o superior).  
+- MySQL Server (versión 8.x).  
+- npm (incluido con Node).  
+- Editor de texto recomendado: VS Code.
+
+
